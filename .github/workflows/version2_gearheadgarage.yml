@@ -53,4 +53,5 @@ jobs:
           app-name: 'gearheadgarage'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0B998C1A2EDB4575BA4419F859155C2B }}
-          package: .
+          package: ${{ github.workspace }}/build
+
