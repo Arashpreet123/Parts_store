@@ -12,8 +12,6 @@ function SearchBar ({onDataFromChild, name}) {
     const [load, setLoad] = useState(true);
     const[firstRender, setFirstRender] = useState(false)
     const[searchInput, setSearchInput] = useState('');
-
-
     const handleSubmit = async (value) => {
       if (value === name) {
         setSearchInput("");
@@ -22,9 +20,10 @@ function SearchBar ({onDataFromChild, name}) {
       }
     
       try {
-        await axios.post('https://gearheadgarage.azurewebsites.net/Shop/searchWord', {
+        await axios.post('/Shop/:searchWord', {
           searchWord: value,
         });
+        
     
         fetchAllBooks();
       } catch (error) {
@@ -69,14 +68,10 @@ function SearchBar ({onDataFromChild, name}) {
                 onChange={(e) => handleSubmit(e.target.value)} />
                 <button onClick={() => handleSubmit(searchInput)}>
                 <SearchIcon></SearchIcon></button>
-
-              
             </div>
-            <div className="dataResult">
-                    
+              <div className="dataResult">    
             </div>
         </div>
-    
     </>
 }
 
