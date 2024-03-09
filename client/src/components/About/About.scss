@@ -210,3 +210,42 @@
   //   // height: 700px;
   // }
 }
+@media screen and (max-width: 580px) {
+  .about{
+    
+    margin-bottom: 1050px;
+  }
+  .clients-box-content{
+    display: flex;
+    flex: wrap;
+    flex-wrap: wrap;
+  }
+  .clients-box{
+    height: 800px;
+  }
+  .flip-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+  }
+  .secondBox-outerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+  }
+  .secondBox-outerContainer-inner2{
+    width: 200px;
+    justify-content: left;
+    .leftText{
+      width: 200px;
+    }
+  }
+  .secondBox-outerContainer-inner1{
+    width: 200px;
+    .leftText{
+      width: 200px;
+    }
+  }
+ 
+}

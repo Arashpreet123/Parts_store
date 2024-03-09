@@ -7,7 +7,7 @@
       
       display: flex;
       gap: 10rem;
-      padding: 8rem 2rem;
+      padding: 1rem 2rem;
      &-text{
       
       max-width: 50rem;
@@ -121,9 +121,11 @@
 
 @media screen and (max-width: 1000px) {
   .contact-container-main{
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
+  
   .contact-container{
     height: 120rem;
   }
@@ -132,4 +134,14 @@
     margin-right: 10px;
   }
 }
-  
+
+@media screen and (max-width: 750px) {
+  .contact-initial-text h2{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact-initial-text h2{
+    font-size: 1.5rem;
+  }
+}

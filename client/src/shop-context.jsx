@@ -55,8 +55,9 @@ export const ShopContextProvider = (props) => {
     return itemData;
   };
 
-  const addToCart = (itemId) => {
-    const itemIdString = String(itemId); // Convert to string
+  const addToCart = (itemName) => {
+    const itemIdString = String(itemName); // Convert to string
+    console.log(itemIdString);
 
     setCartItems((prev) => ({
       ...prev,
@@ -64,6 +65,7 @@ export const ShopContextProvider = (props) => {
     }));
 
     setTotalItems(totalItems + 1);
+    console.log(totalItems);
   };
 
   const removeFromCart = (itemId) => {

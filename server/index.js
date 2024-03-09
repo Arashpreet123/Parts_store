@@ -27,14 +27,11 @@ app.use(session({
   app.use(passport.session())
   app.use(flash())
 
-const db = mysql.createPool({
-    host:'gearheadgarage1.mysql.database.azure.com',
-    user: 'gearheadgarage',
-    password: 'ghg1234!',
-    database: 'aps',
-    ssl: {
-      ca: fs.readFileSync('C:/Users/pandh/GitHub/Parts_store/server/DigiCertGlobalRootCA.crt.pem'), // Provide the path to the CA certificate
-  },
+  const db = mysql.createPool({
+    host:'localhost',
+    user: 'root',
+    password: '',
+    database: 'aps'
     
 })
 

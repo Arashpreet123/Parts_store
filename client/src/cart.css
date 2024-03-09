@@ -8,15 +8,15 @@
 }
 
 .cartItem {
-  /* width: 290px; */
   display: flex;
   align-items: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 10px;
   gap: 15px;
 }
+
 
 .cartItem img {
   width: 100px;
@@ -25,12 +25,26 @@
   border: 1px black solid;
 }
 
+.countHandler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countHandler button {
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+
 .countHandler input {
   width: 60px;
   text-align: center;
   font-weight: bolder;
+  margin-bottom: 10px;
 }
 
+.countHandler button:last-child {
+  margin-left: 5px; /* Adjust the margin as needed */
+}
 .checkout button {
   width: 150px;
   height: 50px;

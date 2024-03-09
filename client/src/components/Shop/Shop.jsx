@@ -18,7 +18,6 @@ const Shop = () => {
     const handleDataFromChild = (data) => {
         // console.log("Parent Child connection established"); 
         setBooks(data);
-        
         setSortedBooks(data);
       };
       const [shouldSort, setShouldSort] = useState(false); // State to control sorting
@@ -48,6 +47,7 @@ const Shop = () => {
 
         setSelectedValue(event.target.value);
     }
+
     return <>
     <Begin names = "Shop"/>
     

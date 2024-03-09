@@ -29,9 +29,17 @@
     // height: 400px;
     
 }
+@media screen and (max-width: 640px) {
+  .team-box{
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
 .team-innerBox {
   position: relative;
     display: flex;
+    
     flex-direction: column;
     width: 30rem;
     // padding: 20px;
