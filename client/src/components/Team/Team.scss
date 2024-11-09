@@ -1,0 +1,229 @@
+.team-container{
+    padding: 5rem 0;
+
+}
+.team-boxContent{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  bottom: 0%;
+  gap: 2rem;
+}
+.team-text{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  margin-bottom: 100px;
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+.team-box{
+  
+    display: flex;
+    gap: 70px;
+    // height: 400px;
+    
+}
+.team-innerBox {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    // padding: 20px;
+    
+  }
+  
+  .team-content {
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .team-author {
+    position: relative;
+    padding: 10px 0px 10px 0px;;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    
+  }
+  .nameTag{
+    z-index: 3;
+    margin: -35px 40px 0px 40px;
+    background-color: #FFFFFF;
+  }
+  .team-name {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .imageBox > img{
+    width: 100%;
+    height: auto;
+    
+  }
+  .team-socials{
+    display: flex;
+    // justify-content: center;
+    list-style: none;
+    gap: 20px;
+  }
+
+  .team-innerBox:hover{
+    // color: white;
+    transition: background-color 1s ease-out 50ms, color .3s ease-out 10ms;
+    
+  }
+  .team-innerBox:hover .hover-socials{
+
+    opacity:1;
+ visibility:visible
+  }
+  .team-innerBox:hover{
+    .imageBox::before{
+      // top: 3%;
+     opacity:1;
+     visibility:visible
+    }
+  } 
+  // hovering for socials
+.hover-socials{
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  align-self: center;
+  opacity: 0;
+visibility: hidden;
+-webkit-transition: all .4s ease;
+transition: all .4s ease;
+    
+}
+
+.icons > a{
+  background-color: rgb(179, 6, 6);
+  display: inline-block;
+width: 50px;
+height: 50px;
+font-size: 24px;
+line-height: 50px;
+text-align: center;
+}
+
+.imageBox::before{
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 100%;
+  background-color: rgba(17, 16, 16, 0.7);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+.imageBox:hover::before{
+ opacity:1;
+ visibility:visible;
+}
+
+a{
+  overflow: hidden;
+}
+
+a:hover i{
+  -webkit-animation-duration:.3s;
+  animation-duration:.3s;
+  -webkit-animation-name: horizontal-scroll;
+  animation-name: horizontal-scroll;
+}
+
+@keyframes horizontal-scroll {
+  0% {
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+    opacity:1
+  }
+  49% {
+    -webkit-transform:translateX(100%);
+    transform:translateX(100%);
+    opacity:0
+  }
+  50% {
+    -webkit-transform:translateX(-100%);
+    transform:translateX(-100%);
+    opacity:0
+  }
+  100% {
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+    opacity:1
+  }
+}
+
+
+
+
+
+
+
+// proddusidsf
+
+.shopTitle {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.product {
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  width: 400px;
+}
+
+.product .description {
+  text-align: center;
+}
+
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.addToCartBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+
+.addToCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}

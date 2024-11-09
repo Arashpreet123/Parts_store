@@ -1,0 +1,135 @@
+
+.contact-container {
+    
+    height: 80rem;
+
+    &-main{
+      
+      display: flex;
+      gap: 10rem;
+      padding: 8rem 2rem;
+     &-text{
+      
+      max-width: 50rem;
+      display: flex;
+      gap: 2rem;
+      
+      flex-direction: column;
+      @media (max-width: 950px) {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+      }
+      h1{
+        font-size: 3rem;
+        font-weight: 600;
+      }
+      p{
+        font-size: 20px;
+      }
+      a{
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.3s;
+      // margin-bottom: 0.5rem;
+
+      &:hover {
+        color: red;
+      }
+      }
+      
+      &-socials{
+        h1{
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+        }
+        i{
+          margin-right: 1rem;
+        }
+      }
+     } 
+
+    
+    }
+  }
+.contact-initial{
+  height: 15rem;
+  position: relative;
+  background-color: #fffdfd;
+  background-image: url('../../assets/contactus.jpg');
+  background-position: left;
+  background-position-x: -25%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  text-align: right;
+  align-items: center;
+  
+  &-text{
+    position: absolute;
+    right: 25%;
+    top: 30%;
+
+    h2{
+      font-size: 3rem;
+      font-weight: 900;
+    }
+  }
+}
+.contact-container-main-form{
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  padding: 19px 30px 19px 30px;
+  border-radius: 5%;
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-label{
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    
+  }
+  input{
+    margin-bottom: 2.3rem;
+    padding: 19px 30px;
+    border: 1px solid;
+    
+
+  }
+  
+  textarea{
+    border: 1px solid;
+    height: 12rem;
+    padding: 19px 30px; 
+    margin-bottom: 2.5rem;
+  }
+  button {
+    background-color: red;
+    padding: 1.8rem 3rem;
+    border-radius: 2%;
+    transition: all 0.4s;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover { 
+      box-shadow: 0 10px 15px 0 rgba(230, 40, 2, 0.6);
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-container-main{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contact-container{
+    height: 120rem;
+  }
+  .contact-initial-text{
+    right: 0;
+    margin-right: 10px;
+  }
+}
+  

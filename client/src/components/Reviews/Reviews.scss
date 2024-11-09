@@ -1,0 +1,75 @@
+.reviews-container{
+    padding: 5rem 0;
+
+}
+
+.reviews-text{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+    margin-bottom: 3rem;
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+
+
+.reviews-box{
+    display: flex;
+    gap: 3rem;
+    
+}
+.reviews-innerBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 10%;
+    width: 30rem;
+    padding: 20px;
+  }
+  
+  .reviews-content {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .reviews-author {
+    margin: auto;
+    text-align: center;
+   
+    img{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+    }
+    
+  }
+  
+  .reviews-namesBox{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .reviews-name {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .reviews-innerBox:hover .reviews-name{
+    color: white;
+    transition: 1s;
+  }
+  .reviews-innerBox:hover{
+    background-color: red;
+    color: white;
+    transition: 1s;
+  }
